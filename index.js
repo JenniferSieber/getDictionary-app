@@ -8,7 +8,6 @@ const wordMeaningsContainer = wordResultsContainer.querySelector('.word-meanings
 const wordMeaningsUL = wordMeaningsContainer.querySelector('ul')
 const mp3Button = document.querySelector('.word-mp3-button')
 const clearPage = document.querySelector('.clear-page')
-// const clearPageText = document.querySelector('.clear-page-text')
 
 let wordObj = null
 let wordMeanings = null
