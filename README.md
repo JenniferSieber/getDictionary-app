@@ -1,5 +1,5 @@
 # getDictionary-app
-Dictionary App that utilizes Vanilla JavaScript to fetch from an API and pull data to dynamically display in browser.
+Dictionary App that utilizes Vanilla JavaScript to fetch data from an API and dynamically display the  user searched word in browser.
 
 HTML, CSS, Vanilla JavaScript
 
