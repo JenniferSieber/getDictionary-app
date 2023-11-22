@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1a261dd86e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>getDefinition</title>
+
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+
+  <div class="app-container">
+    <nav>
+      <section class="header">
+        <h1>
+          <span class="logo"><i class="fa-solid fa-bullseye"></i></span>
+          getDictionary
+        </h1>
+      </section>
+      <header class="word-search">
+        <input type="text" class="word" placeholder="Type word to define here...">
+        <div class="btns">
+          <button class="get-definition fa" aria-label="Get Definition of Word">
+            <span class="logo-sm">
+              <i class="fa-solid fa-bullseye"></i>
+            </span>
+            <!-- get Definition -->
+          </button>
+          <button class="clear-page hidden" aria-label="Clear Page of Last Word Results">
+            <span class="icon">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </header>
+    </nav>
+
+    <main class="main hidden">
+        <section class="word-results">
+          <header>
+            <button id="mp3Button" class="word-mp3-button hidden" aria-label="Play Pronunciation">
+              <!-- <span class="play-icon"> -->
+                <i class="fa-solid fa-play"></i>
+              <!-- </span> -->
+            </button>
+            <h2 class="word-result"></h2>
+          </header>
+          <div class="source-container">
+            <a href="" class="source-link hidden"></a>
+          </div>
+          <div class="word-meanings">
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="copy">
+        <h6><a href="https://jennifersieber.netlify.app/" target="_blank">Jennifer Sieber &copy; 2023</a>
+        </h6>
+      </div>
+      <div class="socials">
+        <a href="https://twitter.com/JenWebDev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://github.com/jennifersieber" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/jennifer-sieber-74a54726b" target="_blank"><i class="fa fa-linkedin"
+            aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-accent: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --color-light: rgb(255, 255, 255);
+  --color-dark: rgb(18, 18, 18);
+  --color-blue: rgb(67, 93, 238);
+  --color-accent-lt: rgb(247, 45, 247);
+  --color-accent-dk: rgb(151, 12, 151);
+  --color-gray: rgba(255, 255, 255, .5);
+  --color-blue-drk: rgba(67, 93, 238, .5);
+  --border-radius: .5rem;
+  --border-radius-circle: 50%;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+.hidden {
+  display: none;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./pexels-alexander-grey-1148399.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  margin: .25rem;
+  width: 4.44rem;
+  height: 4.44rem;
+  text-align: center;
+  border-radius: var(--border-radius-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--color-blue);
+  color: var(--color-light);
+}
+
+button:hover {
+  background: var(--color-accent-lt);
+}
+
+
+button i {
+  font-size: 2rem;
+}
+
+/* Header of site */
+nav {
+  background: var(--color-blue-drk);
+  color: var(--color-light);
+  font-family: var(--font-accent);
+  padding: .35rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .header h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-light);
+
+}
+
+.logo {
+  color: var(--color-blue);
+}
+
+.word-search {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+  padding: .4rem;
+  border-radius: .5rem;
+}
+
+input {
+  width: 22rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: var(--color-blue) 1px solid;
+  border-radius: var(--border-radius);
+  padding: .5rem 0;
+  text-align: center;
+  margin-right: .25rem;
+}
+
+input::placeholder {
+  color: var(--color-blue-drk);
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+}
+
+.clear-page {
+  background: var(--color-accent-dk);
+}
+
+/* Dynamically displayed main content */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-gray);
+  align-items: center;
+  margin: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.word-results {
+  margin: 1rem;
+}
+
+.word-results header {
+  display: flex;
+  align-items: center;
+}
+
+.word-results h2 {
+  font-size: 6.5rem;
+  margin-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-family: var(--font-accent);
+  font-weight: bold;
+}
+
+.source-container {
+  margin: 0rem 2rem;
+}
+
+.source-container a {
+  color: var(--color-accent-dk);
+}
+
+.source-container a:hover {
+  color: var(--color-accent-lt);
+}
+
+.word-meanings {
+  margin-left: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.word-meanings h4 {
+  margin-top: .5rem;
+  font-size: 2.8rem;
+  font-family: var(--font-accent);
+}
+
+.word-meanings p {
+  margin: .25rem 1rem;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+
+.word-meanings span {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-family: var(--font-accent);
+  width: 100%;
+}
+
+/* Footer Copyright and socials */
+footer {
+  margin-top: auto;
+  background: var(--color-blue-drk);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.copy,
+.socials {
+  margin: .25rem 0;
+}
+
+.copy a {
+  font-size: 1.6rem;
+  color: var(--color-light);
+}
+
+.socials a {
+  color: var(--color-light);
+  font-size: 2.5rem;
+  margin-right: 1.25rem;
+}
+
+.copy a:hover,
+.socials i:hover {
+  color: var(--color-accent-lt);
+}
+
+/* Media Queries Screens: less than 300px width or greater than 768px width */
+@media screen and (max-width: 285px) {
+  nav .header h1 {
+    font-size: 2.9rem;
+  }
+
+  button {
+    background: none;
+    font-size: .8rem;
+    width: 2.22rem;
+    height: 2.22rem;
+  }
+
+  button i {
+    color: var(--color-light);
+    background: none;
+  }
+
+  button:hover {
+   background: none;
+   color: var(--color-accent-lt);
+  }
+
+  .clear-page {
+    background: none;
+  }
+
+  .word-mp3-button i{
+    color: var(--color-blue);
+  }
+
+  input {
+    width: 17rem;
+    font-size: 1rem;
+  }
+
+  .word-results h2 {
+    font-size: 3.5rem;
+  }
+
+  .word-meanings h4 {
+    font-size: 1.5rem;
+  }
+
+  .word-meanings p {
+    line-height: 1;
+    font-size: 1rem;
+  }
+
+  .word-meanings span {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  html {
+      font-size: 100%;
+    }
+  nav .header h1 {
+    justify-content: space-evenly;
+    font-size: 5.9rem;
+  }
+
+  input {
+    width: 50rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+}
